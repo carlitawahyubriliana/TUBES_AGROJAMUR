@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('produk', function (Blueprint $table) {
             $table->id();
-            $table->string('nama'); 
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->enum('role', ['admin', 'customer'])->default('customer'); 
-            $table->string('telepon')->nullable(); 
+            $table->string('nama');
+            $table->integer('harga');
+            $table->integer('stok')->default(0);
+            $table->text('deskripsi');
+            $table->string('gambar');
+            $table->enum('kategori', ['tiram_putih', 'tiram_coklat', 'kuping', 'kancing']);
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('produk');
     }
 };
