@@ -18,6 +18,10 @@ use App\Http\Controllers\pesananController;
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/produk', function () {
+    return view('produk');
+});
     
 Route::get('/', function () {
     return view('homepage');
@@ -46,6 +50,6 @@ Route::put('/pesanan/{pesanan}', [pesananController::class, 'update'])->name('pe
 Route::delete('/pesanan/{pesanan}', [pesananController::class, 'destroy'])->name('pesanan.destroy');
 
 Route::get('/tentang-kami', function () {
-    return view('pesanan.tentangkami');
+    return view('tentangkami');
 })->name('tentangkami');
 
