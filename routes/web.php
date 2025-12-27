@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\pesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/index', function () {
+    return view('index');
+});
+    
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,11 +28,4 @@ Route::get('/dashboard', function () {
     return view('index');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/homepage', function () {
-    return view('homepage');
-});
-
+Route::resource('pesanan', pesananController::class);
