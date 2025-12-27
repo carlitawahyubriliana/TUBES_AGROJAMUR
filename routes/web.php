@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/index', function () {
     return view('index');
 });
+    
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Keep dashboard route (for direct access) but render index which includes dashboard partial
 Route::get('/dashboard', function () {
