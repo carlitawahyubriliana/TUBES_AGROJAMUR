@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\pesananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('index');
 });
+
+Route::resource('pesanan', pesananController::class);
