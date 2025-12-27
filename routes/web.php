@@ -20,7 +20,7 @@ Route::get('/index', function () {
 });
     
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
 });
 
 // Keep dashboard route (for direct access) but render index which includes dashboard partial
