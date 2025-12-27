@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Agro Jamur Pabuwaran</title>
+  <title>Tentang Kami | Agro Jamur Pabuwaran</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tentang.css">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
   <nav>
     <a href="#">Beranda</a>
     <a href="#">Produk</a>
-    <a href="#">Tentang Kami</a>
+    <a href="#" class="active">Tentang Kami</a>
     <a href="#">Kontak</a>
     <a href="#" class="btn-login">Login</a>
   </nav>
@@ -22,92 +22,97 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h3>TENTANG KAMI</h3>
     <h1>AGRO JAMUR PABUWARAN</h1>
     <p>
-      Argo Jamur adalah penyedia jamur segar berkualitas tinggi yang
-      dipanen langsung dari budidaya modern dan higienis.
+      Kami adalah usaha agro jamur yang berfokus pada budidaya jamur segar
+      berkualitas dengan proses higienis dan ramah lingkungan.
     </p>
-    <a href="#" class="btn-primary">Lihat Jamur</a>
   </div>
 </section>
 
-<!-- ===== WHY US ===== -->
-<section class="why">
-  <h2>Mengapa Memilih Agro Jamur Pabuwaran?</h2>
-  <p class="subtitle">
-    Jamur kami dibudidayakan dengan teknologi modern dan standar kebersihan tinggi
-  </p>
+<!-- ===== PROSES ===== -->
+<section class="proses">
+  <div class="proses-grid">
 
-  <div class="why-grid">
-    <div class="why-box">
-      <h4>100% Organik & Alami</h4>
-      <p>Tanpa pestisida dan bahan kimia berbahaya.</p>
+    <div class="proses-item">
+      <img src="assets/pembibitan.jpg">
+      <div>
+        <h4>Pembibitan Jamur</h4>
+        <p>
+          Proses pembibitan dilakukan menggunakan bibit unggul
+          dalam kondisi steril untuk menghasilkan jamur berkualitas.
+        </p>
+      </div>
     </div>
-    <div class="why-box">
-      <h4>Segar Langsung dari Kebun</h4>
-      <p>Dipanen harian dan dikirim cepat.</p>
+
+    <div class="proses-item reverse">
+      <img src="assets/pengepakan.jpg">
+      <div>
+        <h4>Pengepakan Baglog</h4>
+        <p>
+          Baglog dikemas rapi dan higienis agar mudah distribusi
+          dan siap digunakan.
+        </p>
+      </div>
     </div>
-    <div class="why-box">
-      <h4>Kualitas Terjamin</h4>
-      <p>Bersertifikat BPOM & Halal.</p>
+
+    <div class="proses-item">
+      <img src="assets/sterilisasi.jpg">
+      <div>
+        <h4>Sterilisasi Baglog</h4>
+        <p>
+          Baglog disterilisasi dengan suhu tinggi untuk membunuh
+          bakteri dan jamur pengganggu.
+        </p>
+      </div>
     </div>
-    <div class="why-box">
-      <h4>Tinggi Protein</h4>
-      <p>Kaya nutrisi dan rendah lemak.</p>
+
+    <div class="proses-item reverse">
+      <img src="assets/tumbuh.jpg">
+      <div>
+        <h4>Jamur Mulai Tumbuh</h4>
+        <p>
+          Jamur tumbuh dalam kondisi lembab dan sirkulasi udara
+          yang terkontrol.
+        </p>
+      </div>
     </div>
+
+    <div class="proses-item">
+      <img src="assets/panen.jpg">
+      <div>
+        <h4>Panen Jamur</h4>
+        <p>
+          Jamur dipanen pada waktu terbaik agar kualitas dan
+          kesegarannya terjaga.
+        </p>
+      </div>
+    </div>
+
+    <div class="proses-item reverse">
+      <img src="assets/kemasan.jpg">
+      <div>
+        <h4>Pengemasan Jamur</h4>
+        <p>
+          Jamur dikemas rapi sebelum dikirim ke konsumen
+          dalam kondisi segar.
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ===== PRODUK ===== -->
-<section class="produk">
-  <h2>Produk Unggulan Kami</h2>
-  <p class="subtitle">
-    4 Jamur Pilihan Terbaik Langsung dari Kebun Pabuwaran
-  </p>
-
-  <div class="produk-grid">
-    <div class="produk-card">
-      <img src="assets/jamur1.jpg">
-      <h4>Jamur Tiram Putih</h4>
-      <p>450gr</p>
-      <button>BUY NOW</button>
-    </div>
-
-    <div class="produk-card">
-      <img src="assets/jamur2.jpg">
-      <h4>Jamur Tiram Coklat</h4>
-      <p>200gr</p>
-      <button>BUY NOW</button>
-    </div>
-
-    <div class="produk-card">
-      <img src="assets/jamur3.jpg">
-      <h4>Jamur Kuping</h4>
-      <p>285gr</p>
-      <button>BUY NOW</button>
-    </div>
-
-    <div class="produk-card">
-      <img src="assets/jamur4.jpg">
-      <h4>Jamur Kancing</h4>
-      <p>150gr</p>
-      <button>BUY NOW</button>
-    </div>
+<!-- ===== CTA ===== -->
+<section class="cta">
+  <h2>Tertarik Coba Jamur Dengan Kualitas Terbaik?</h2>
+  <div class="cta-circle">
+    <img src="assets/jamur.png">
   </div>
-</section>
-
-<!-- ===== TESTIMONI ===== -->
-<section class="testimoni">
-  <h2>Hasil Nyata, Orang Nyata.</h2>
-  <p class="subtitle">Baca cerita mereka</p>
-
-  <div class="testi-grid">
-    <div class="testi-card">Jamurnya segar dan bersih.</div>
-    <div class="testi-card">Pengiriman cepat, kualitas premium.</div>
-    <div class="testi-card">Sudah langganan, selalu puas.</div>
-  </div>
+  <a href="#" class="cta-btn">beli sekarang ↗</a>
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -115,13 +120,20 @@
   <div class="footer-grid">
     <div>
       <h4>Agro Jamur Pabuwaran</h4>
-      <p>Banyumas, Jawa Tengah</p>
+      <p>
+        Marketing:<br>
+        Jl. Gn. Merapi No RT 02/02, Pabuwaran,<br>
+        Banyumas, Jawa Tengah
+      </p>
     </div>
+
     <div>
-      <h4>Kontak</h4>
+      <h4>Kontak Kami</h4>
       <p>0821-3848-7484</p>
+      <p>@agrojamurpabuwaran</p>
     </div>
   </div>
+
   <small>© 2025 Agro Jamur Pabuwaran</small>
 </footer>
 

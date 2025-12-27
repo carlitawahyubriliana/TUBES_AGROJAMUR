@@ -1,7 +1,6 @@
 :root {
   --dark: #0f3d35;
-  --dark-2: #123f37;
-  --light: #f5f7f6;
+  --light: #f6f8f7;
   --card: #ffffff;
 }
 
@@ -24,7 +23,6 @@ body {
   padding: 15px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbar nav a {
@@ -33,136 +31,101 @@ body {
   margin-left: 25px;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .btn-login {
   background: white;
   color: var(--dark);
   padding: 6px 14px;
   border-radius: 5px;
-  font-weight: 600;
 }
 
 /* HERO */
 .hero {
+  height: 70vh;
+  background: url("../assets/hero-tentang.jpg") center/cover no-repeat;
   position: relative;
-  height: 90vh;
-  background: url("../assets/hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hero-overlay {
+.overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.55);
 }
 
-.hero-content {
+.hero-text {
   position: relative;
+  color: white;
   text-align: center;
-  color: white;
-  max-width: 750px;
-}
-
-.hero-content h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  line-height: 1.7;
-}
-
-.btn-primary {
-  display: inline-block;
-  margin-top: 30px;
-  background: var(--dark);
-  color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-/* SECTION */
-section {
-  padding: 80px 50px;
-  max-width: 1200px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 800px;
   margin: auto;
 }
 
-h2 {
-  text-align: center;
-  color: var(--dark);
-  font-size: 28px;
+.hero-text h1 {
+  font-size: 42px;
+  margin: 15px 0;
 }
 
-.subtitle {
-  text-align: center;
-  margin: 15px 0 50px;
+/* PROSES */
+.proses {
+  padding: 80px 60px;
 }
 
-/* WHY */
-.why-grid {
+.proses-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.proses-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 180px 1fr;
   gap: 30px;
+  align-items: center;
 }
 
-.why-box {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+.proses-item.reverse {
+  grid-template-columns: 1fr 180px;
 }
 
-/* PRODUK */
-.produk {
-  background: white;
-}
-
-.produk-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.produk-card {
-  background: var(--card);
-  border-radius: 22px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.produk-card img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-.produk-card button {
-  margin-top: 15px;
-  background: var(--dark);
-  color: white;
-  border: none;
-  padding: 8px 20px;
+.proses-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 20px;
 }
 
-/* TESTIMONI */
-.testimoni {
-  background: var(--light);
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 80px 40px;
 }
 
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+.cta-circle {
+  width: 240px;
+  height: 240px;
+  background: #355f58;
+  border-radius: 50%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.testi-card {
-  background: #e4eeeb;
-  padding: 25px;
-  border-radius: 18px;
+.cta-circle img {
+  width: 180px;
+}
+
+.cta-btn {
+  background: var(--dark);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 /* FOOTER */
@@ -174,13 +137,13 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
 footer small {
   display: block;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   opacity: 0.7;
 }
-
