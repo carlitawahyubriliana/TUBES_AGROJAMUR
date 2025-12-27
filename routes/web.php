@@ -18,6 +18,10 @@ use App\Http\Controllers\pesananController;
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/produk', function () {
+    return view('produk');
+});
     
 Route::get('/', function () {
     return view('welcome');
