@@ -46,6 +46,6 @@ Route::put('/pesanan/{pesanan}', [pesananController::class, 'update'])->name('pe
 Route::delete('/pesanan/{pesanan}', [pesananController::class, 'destroy'])->name('pesanan.destroy');
 
 Route::get('/tentang-kami', function () {
-    return view('pesanan.tentangkami');
+    return view('tentangkami');
 })->name('tentangkami');
 

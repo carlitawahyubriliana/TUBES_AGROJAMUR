@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f8f9f7;
+  color: #1f2d2b;
+}
+
+/* NAVBAR */
+header {
+  background: #0f3d35;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.btn-login {
+  background: white;
+  color: #0f3d35;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1588167056543-39cb8ad0d3a5");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  background: #0f3d35;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* SECTION */
+section {
+  padding: 70px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  color: #0f3d35;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.product-card button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  background: #0f3d35;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* TESTIMONI */
+.testimoni {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.testi-card {
+  background: #e7f0ed;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f3d35;
+  color: white;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.7;
+}

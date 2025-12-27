@@ -1,148 +1,133 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Agro Jamur Pabuwaran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@section('content')
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="mb-4 text-center">Tentang Kami - Argo Jamur</h1>
-            <p class="lead text-center mb-5">Kami adalah penyedia jamur segar berkualitas tinggi dengan komitmen untuk kesehatan dan keberlanjutan.</p>
-        </div>
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h3>Agro Jamur</h3>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Produk</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Kontak</a>
+      <a href="#" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>AGRO JAMUR PABUWARAN</h1>
+      <p>
+        Penyedia jamur segar berkualitas tinggi yang dipanen langsung
+        dari budidaya modern dan higienis.
+      </p>
+      <button>Lihat Jamur</button>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <section>
+    <div class="section-title">
+      <h2>Mengapa Memilih Agro Jamur Pabuwaran?</h2>
     </div>
 
-    <!-- Company Overview -->
-    <div class="row mb-5">
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3 class="card-title text-success">Visi Kami</h3>
-                    <p class="card-text">Menjadi penyedia jamur terkemuka di Indonesia yang memberikan produk berkualitas tinggi, layanan prima, dan berkontribusi pada kesehatan masyarakat melalui nutrisi alami.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3 class="card-title text-primary">Misi Kami</h3>
-                    <ul class="card-text">
-                        <li>Menyediakan jamur segar dengan standar kualitas tertinggi</li>
-                        <li>Menerapkan praktik pertanian berkelanjutan</li>
-                        <li>Mendidik masyarakat tentang manfaat jamur untuk kesehatan</li>
-                        <li>Membangun kemitraan dengan petani lokal</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="features">
+      <div class="feature-box">
+        <h4>100% Organik & Alami</h4>
+        <p>Tanpa pestisida berbahaya, aman dan sehat.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Segar Langsung dari Kebun</h4>
+        <p>Dipanen setiap hari dan dikirim cepat.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Bersertifikat</h4>
+        <p>Memiliki sertifikasi BPOM & Halal.</p>
+      </div>
+
+      <div class="feature-box">
+        <h4>Tinggi Protein</h4>
+        <p>Kaya nutrisi & rendah lemak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section>
+    <div class="section-title">
+      <h2>Produk Unggulan Kami</h2>
     </div>
 
-    <!-- Our Products -->
-    <div class="row mb-5">
-        <div class="col-12">
-            <h2 class="text-center mb-4">Produk Kami</h2>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-mushroom fa-3x text-success mb-3"></i>
-                    <h5 class="card-title">Tiram Putih</h5>
-                    <p class="card-text">Jamur tiram putih segar dengan tekstur lembut dan rasa gurih.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-mushroom fa-3x text-brown mb-3" style="color: #8B4513;"></i>
-                    <h5 class="card-title">Tiram Coklat</h5>
-                    <p class="card-text">Jamur tiram coklat dengan aroma khas dan nutrisi tinggi.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-mushroom fa-3x text-warning mb-3"></i>
-                    <h5 class="card-title">Jamur Kuping</h5>
-                    <p class="card-text">Jamur kuping hitam yang kaya serat dan mineral.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="fas fa-mushroom fa-3x text-light mb-3" style="color: #F5F5DC;"></i>
-                    <h5 class="card-title">Jamur Kancing</h5>
-                    <p class="card-text">Jamur kancing putih klasik dengan rasa yang universal.</p>
-                </div>
-            </div>
-        </div>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1602524200728-61d6b4c2b6de">
+        <h4>Jamur Tiram Putih</h4>
+        <p>450gr</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+        <h4>Jamur Tiram Coklat</h4>
+        <p>200gr</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25">
+        <h4>Jamur Kuping</h4>
+        <p>285gr</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1615484478243-39e18d01e4b1">
+        <h4>Jamur Kancing</h4>
+        <p>150gr</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section>
+    <div class="section-title">
+      <h2>Hasil Nyata, Orang Nyata</h2>
     </div>
 
-    <!-- Why Choose Us -->
-    <div class="row mb-5">
-        <div class="col-12">
-            <h2 class="text-center mb-4">Mengapa Memilih Kami?</h2>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center h-100">
-                <div class="card-body">
-                    <i class="fas fa-leaf fa-2x text-success mb-3"></i>
-                    <h5 class="card-title">Organik & Alami</h5>
-                    <p class="card-text">Semua produk kami ditanam tanpa bahan kimia berbahaya, menggunakan metode organik.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center h-100">
-                <div class="card-body">
-                    <i class="fas fa-truck fa-2x text-primary mb-3"></i>
-                    <h5 class="card-title">Pengiriman Cepat</h5>
-                    <p class="card-text">Layanan pengiriman yang cepat dan aman untuk menjaga kesegaran produk.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card text-center h-100">
-                <div class="card-body">
-                    <i class="fas fa-award fa-2x text-warning mb-3"></i>
-                    <h5 class="card-title">Kualitas Terjamin</h5>
-                    <p class="card-text">Setiap produk melalui kontrol kualitas ketat sebelum dikirim ke pelanggan.</p>
-                </div>
-            </div>
-        </div>
+    <div class="testimoni">
+      <div class="testi-card">Jamurnya segar dan bersih 👍</div>
+      <div class="testi-card">Pengiriman cepat, kualitas mantap.</div>
+      <div class="testi-card">Sudah langganan, selalu puas.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h4>Agro Jamur Pabuwaran</h4>
+        <p>Banyumas, Jawa Tengah</p>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>📞 0821-3848-7484</p>
+      </div>
     </div>
 
-    <!-- Contact Info -->
-    <div class="row">
-        <div class="col-12">
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <h3 class="card-title">Hubungi Kami</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fas fa-map-marker-alt fa-2x text-danger mb-2"></i>
-                            <h6>Alamat</h6>
-                            <p>Jl. Jamur Segar No. 123<br>Kota Malang, Jawa Timur</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-phone fa-2x text-success mb-2"></i>
-                            <h6>Telepon</h6>
-                            <p>(0341) 123-4567</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
-                            <h6>Email</h6>
-                            <p>info@argojamur.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <small>© 2025 Agro Jamur Pabuwaran</small>
+  </footer>
 
-<style>
-.text-brown {
-    color: #8B4513 !important;
-}
-</style>
-@endsection
+</body>
+</html>
