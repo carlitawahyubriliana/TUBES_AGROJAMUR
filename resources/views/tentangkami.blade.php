@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Tentang Kami | Agro Jamur Pabuwaran</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/tentang.css">
+  <link rel="stylesheet" href="css/tentangkamiphp.css">
 </head>
 <body>
 
